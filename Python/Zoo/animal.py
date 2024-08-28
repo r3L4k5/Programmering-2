@@ -28,21 +28,35 @@ class Animal():
         self.species: str = species
         self.sex: Sex = sex
         self.habitat: Habitat = habitat
-        self.offsprings: list = []
         self.fertility: int = fertility
     
+    #Check if they're the same species
     def __eq__(self, animal: object) -> bool:
 
         return self.species == animal.species
 
+    #Breeding by adding to animals
     def __add__(self, partner):
 
         if self != partner or self.sex == partner.sex:
             return
 
+        offsprings = []
+
         for _ in range(randint(1, self.fertility)):
             
-            self.offsprings.append(copy.deepcopy(self))
+            offsprings.append(copy.deepcopy(self))
         
-        
+        return offsprings
+    
+    def __str__(self) -> str:
+        return self.species
+
+
+Anim1 = Animal("Dog", Sex.MALE, Habitat.TEMPERATE, 5)
+Anim2 = Animal("Dog", Sex.FEMALE, Habitat.TEMPERATE, 5)
+
+children = Anim1 + Anim2
+print(children[0])
+     
         
