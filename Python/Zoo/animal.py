@@ -2,7 +2,7 @@
 import copy
 
 from enum import Enum, auto
-from random import randint, choice
+from random import randint, choice, randrange
 
 
 class Sex(Enum):
@@ -14,11 +14,11 @@ class Habitat(Enum):
     SAVANN = auto()
     RAINFOREST = auto()
     TUNDRA = auto()
-    SEA = auto()
-    DEEPSEA = auto()
-    TEMPERATE = auto()
+    FOREST = auto()
     STEPPE = auto()
     MOUNTAIN = auto()
+    MARSH = auto()
+    CAVE = auto()
 
 
 class Animal():
@@ -35,7 +35,8 @@ class Animal():
     #Check if they're the same species
     def __eq__(self, animal: object) -> bool:
 
-        return self.species == animal.species
+        return self.species.lower() == animal.species.lower()
+
 
     #Breeding by adding to animals
     def __add__(self, partner):
@@ -63,14 +64,3 @@ class Animal():
     def __str__(self) -> str:
         return self.species
 
-
-if __name__ == "__main__":
-
-    Dog1 = Animal("Dog", Sex.MALE, Habitat.TEMPERATE, 7)
-
-    Dog2 = Animal("Dog", Sex.FEMALE, Habitat.TEMPERATE, 7)
-
-    children = Dog1 + Dog2
-
-    for child in children:
-        print(child.sex)
