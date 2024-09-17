@@ -2,7 +2,7 @@
 import copy
 
 from enum import Enum, auto
-from random import randint, choice, randrange
+from random import randint, choice
 
 
 class Sex(Enum):
