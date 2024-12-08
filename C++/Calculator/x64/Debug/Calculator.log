@@ -1,0 +1,6 @@
+﻿  Calculator.cpp
+C:\Users\amom1210\OneDrive - HONESTA\Programmering 2\C++\Calculator\Calculator\Calculator\Calculator.cpp(36,20): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\amom1210\OneDrive - HONESTA\Programmering 2\C++\Calculator\Calculator\Calculator\Calculator.cpp(40,20): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\amom1210\OneDrive - HONESTA\Programmering 2\C++\Calculator\Calculator\Calculator\Calculator.cpp(44,20): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\amom1210\OneDrive - HONESTA\Programmering 2\C++\Calculator\Calculator\Calculator\Calculator.cpp(48,20): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  Calculator.vcxproj -> C:\Users\amom1210\OneDrive - HONESTA\Programmering 2\C++\Calculator\Calculator\x64\Debug\Calculator.exe
