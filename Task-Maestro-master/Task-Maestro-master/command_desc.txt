@@ -1,7 +1,0 @@
-Create new task
-View all tasks
-Delete specific task
-View all valid commands
-Save task data
-Load task data
-Exit from command or program
